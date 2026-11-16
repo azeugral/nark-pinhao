@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nark Pinhão · Black & Grey Portrait Tattoo · Mafra, Portugal</title>
+<meta name="description" content="Nark Pinhão, black and grey portrait tattoo artist at Versus Tattoo, Mafra, Portugal. 20+ awards, 13 years tattooing, guest spots in the USA and Europe.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Nark Pinhão · Portrait Tattoo">
+<meta property="og:description" content="Black and grey portraits, goddesses and original art. Versus Tattoo, Mafra, Portugal. From Portugal to the world.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/parede.webp" as="image">
+<link rel="preload" href="img/q/49.webp" as="image">
+<style>
+@font-face{font-family:Cinzel;src:url(fonts/cinzel.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:Hanken;src:url(fonts/hanken.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--bg:#0f0e0d;--bg2:#161412;--ink:#ece7de;--mut:#a39c91;--red:#a8231f;--red2:#c4302a;--line:#2d2925;--e:cubic-bezier(.16,.84,.32,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Hanken,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;-webkit-user-drag:none;user-select:none}
+a{color:inherit}
+h1,h2,.cz{font-family:Cinzel,Georgia,serif;font-weight:700;letter-spacing:.03em;line-height:1.05}
+h2{font-size:clamp(2.1rem,5vw,3.9rem);text-align:center;text-wrap:balance;margin-bottom:18px}
+.lead{max-width:640px;margin:0 auto 48px;text-align:center;color:var(--mut);text-wrap:balance}
+section{padding:110px 24px}
+.wrap{max-width:1240px;margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:54px;padding:0 26px;font:600 14px/1.2 Hanken,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1.5px solid var(--red);transition:background .3s var(--e),color .3s var(--e),border-color .3s var(--e),transform .3s var(--e);cursor:pointer}
+.btn:active{transform:scale(.97)}
+.btn.p{background:var(--red);color:var(--ink)}
+.btn.p:hover{background:var(--red2);border-color:var(--red2)}
+.btn.s{background:transparent;color:var(--ink);border-color:rgba(236,231,222,.55)}
+.btn.s:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px;margin:0 auto;width:100%}
+
+nav{position:absolute;top:0;left:0;right:0;z-index:6;display:flex;justify-content:space-between;align-items:center;padding:22px 32px}
+.logo{font-family:Cinzel,serif;font-weight:700;font-size:21px;letter-spacing:.14em;text-decoration:none;line-height:1;text-align:center}
+.logo small{display:block;font:600 9.5px/1 Hanken,sans-serif;letter-spacing:.38em;color:var(--mut);margin-top:6px;text-transform:uppercase}
+nav ul{display:flex;gap:30px;list-style:none}
+nav ul a{text-decoration:none;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);transition:color .3s var(--e)}
+nav ul a:hover{color:var(--ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* HERO: cards pinned on his own NARK graffiti wall; a burst of spray paints the next piece */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;padding:84px 0 40px;overflow:hidden;isolation:isolate;background:var(--bg)}
+.parede{position:absolute;inset:0;z-index:-3;background:url(img/parede.webp) center 42%/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse 75% 65% at 50% 46%,rgba(15,14,13,.08),rgba(15,14,13,.7) 78%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:200px;background:linear-gradient(180deg,transparent,var(--bg));pointer-events:none;z-index:-1}
+.cena{position:relative;flex:1;min-height:470px}
+.q{position:absolute;margin:0;left:var(--x);top:var(--y);height:var(--h);aspect-ratio:4/5.2;transform:translate(-50%,-50%) rotate(var(--r));animation:pousa 1.05s var(--d) cubic-bezier(.2,.9,.25,1) both}
+@keyframes pousa{from{opacity:0;transform:translate(-50%,-55%) rotate(calc(var(--r) + 4deg)) scale(1.1)}}
+.q0{--x:50%;--y:46%;--h:min(53svh,570px);--r:0deg;--d:0s;z-index:3}
+.q1{--x:calc(50% - min(23vw,330px));--y:29%;--h:min(30svh,310px);--r:-5deg;--d:.12s}
+.q2{--x:calc(50% + min(23vw,330px));--y:29%;--h:min(30svh,310px);--r:5deg;--d:.2s}
+.q3{--x:calc(50% - min(20vw,286px));--y:76%;--h:min(25svh,255px);--r:6deg;--d:.3s}
+.q4{--x:calc(50% + min(20vw,286px));--y:76%;--h:min(25svh,255px);--r:-6deg;--d:.38s}
+/* the card: same as his profile picture, white paper with a black keyline */
+.cart{position:absolute;inset:0;padding:5.5%;background:#efebe3;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),0 2px 3px rgba(0,0,0,.5),0 34px 70px -14px rgba(0,0,0,.9)}
+.cart::before{content:"";position:absolute;inset:2.4%;border:1.5px solid #141210;pointer-events:none}
+.ob{position:relative;height:100%;overflow:hidden;background:#0c0b0a}
+.ob img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ob .sp{-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:var(--mx) var(--my);mask-position:var(--mx) var(--my);-webkit-mask-size:0 0;mask-size:0 0;animation:spray 1.5s cubic-bezier(.45,.05,.55,1) forwards}
+.ob .sa{z-index:2;-webkit-mask-image:url(img/spray-a.png);mask-image:url(img/spray-a.png)}
+.ob .sb{z-index:3;-webkit-mask-image:url(img/spray-b.png);mask-image:url(img/spray-b.png);animation-delay:.45s}
+@keyframes spray{to{-webkit-mask-size:460% 460%;mask-size:460% 460%}}
+.ob::after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;background:linear-gradient(120deg,rgba(255,255,255,.08),rgba(255,255,255,0) 35%,rgba(255,255,255,0) 70%,rgba(255,255,255,.04));box-shadow:inset 0 0 30px rgba(0,0,0,.3)}
+.placa{position:absolute;left:50%;top:calc(100% + 14px);translate:-50% 0;min-width:66%;padding:9px 18px 8px;text-align:center;background:#efebe3;color:#141210;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1),0 10px 22px rgba(0,0,0,.6);white-space:nowrap}
+.placa::before{content:"";position:absolute;inset:3px;border:1px solid #141210;pointer-events:none}
+.placa b{display:block;font:700 15px/1.2 Cinzel,serif;letter-spacing:.08em}
+.placa span{display:block;font:600 10px/1.4 Hanken,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#5d5750}
+.placa b,.placa span{transition:opacity .45s var(--e)}
+.placa.tr b,.placa.tr span{opacity:0}
+.lado{position:absolute;top:46%;z-index:2;display:grid;gap:30px;translate:0 -50%;animation:up 1s .5s var(--e) both}
+.le{left:clamp(24px,4vw,70px);text-align:left}.ld{right:clamp(24px,4vw,70px);text-align:right}
+.lado p{font-size:14px;line-height:1.4;color:var(--mut)}
+.lado b{display:block;font:700 20px/1.15 Cinzel,serif;letter-spacing:.05em;color:var(--ink);margin-bottom:5px}
+.le p{border-left:2px solid var(--red);padding-left:14px}.ld p{border-right:2px solid var(--red);padding-right:14px}
+.hero-txt{position:relative;z-index:4;text-align:center;margin-top:46px;padding:0 16px}
+.nome{font:700 clamp(3.6rem,min(7vw,11.5svh),7.4rem)/.95 Cinzel,Georgia,serif;letter-spacing:.06em;color:var(--ink);text-shadow:0 10px 40px rgba(0,0,0,.75);animation:up 1s .3s var(--e) both}
+.sub{display:flex;justify-content:center;flex-wrap:wrap;margin:16px 0 24px;font:600 12px/1 Hanken,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);animation:up 1s .45s var(--e) both}
+.sub span{padding:0 16px}.sub span+span{border-left:1px solid var(--red)}
+.hero .btns{animation:up 1s .55s var(--e) both}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* WORK: every piece on a paper mat with a keyline, like a hung print */
+.filt{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:36px}
+.filt button{background:none;border:1px solid var(--line);color:var(--mut);font:600 12.5px/1 Hanken,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:13px 18px;cursor:pointer;transition:all .3s var(--e)}
+.filt button.on,.filt button:hover{border-color:var(--ink);color:var(--ink)}
+.filt button.on{background:var(--ink);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.grid a{position:relative;display:block;padding:9px;background:#1b1916;box-shadow:inset 0 0 0 1px #34302b,0 18px 34px -18px rgba(0,0,0,.9);cursor:zoom-in;transition:transform .3s var(--e),box-shadow .3s var(--e)}
+.grid a::before{content:"";position:absolute;inset:4px;border:1px solid rgba(236,231,222,.16);pointer-events:none;transition:border-color .3s var(--e)}
+.grid a::after{content:"";position:absolute;left:50%;bottom:-1px;width:7px;height:7px;background:var(--red);transform:translate(-50%,50%) rotate(45deg);opacity:0;transition:opacity .3s var(--e)}
+.grid a:hover{transform:translateY(-3px);box-shadow:inset 0 0 0 1px #4a443d,0 26px 40px -18px rgba(0,0,0,.95)}
+.grid a:hover::before{border-color:rgba(236,231,222,.4)}
+.grid a:hover::after{opacity:1}
+.grid .fr{aspect-ratio:4/5;overflow:hidden;background:#000;box-shadow:0 0 0 1px #000}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--e)}
+.grid a:hover img{transform:scale(1.035)}
+.more{text-align:center;margin-top:38px}
+
+/* AWARDS */
+.premios{background:var(--bg2)}
+.trof{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);max-width:1180px;margin:0 auto}
+.trof article{background:var(--bg2);padding:30px 22px 28px;text-align:center}
+.trof .ano{font:600 11px/1 Hanken,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--red2)}
+.trof h3{font:700 21px/1.15 Cinzel,serif;letter-spacing:.04em;margin:10px 0 4px}
+.trof .ev{font-size:13.5px;color:var(--mut);line-height:1.4;margin-bottom:16px;min-height:2.8em}
+.trof ul{list-style:none;display:grid;gap:7px}
+.trof li{font-size:14.5px;line-height:1.35}
+.trof li b{font-weight:700;color:var(--ink)}
+.trof li span{color:var(--mut)}
+.nota{text-align:center;color:var(--mut);font-size:14px;margin-top:22px}
+
+/* BEYOND SKIN */
+.f16{position:relative;max-width:1180px;margin:0 auto 18px;background:#0a0a0a;box-shadow:0 0 0 1px var(--line)}
+.f16 img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.f16 figcaption{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end;padding:22px 26px;text-align:left;border-top:1px solid var(--line)}
+.f16 figcaption b{display:block;font:700 clamp(1.3rem,2.2vw,1.8rem)/1.15 Cinzel,serif;letter-spacing:.03em;margin-bottom:6px}
+.f16 figcaption p{color:var(--mut);font-size:15px}
+.f16 .trofeu{border:1px solid var(--red);padding:10px 14px;text-align:center;white-space:nowrap}
+.f16 .trofeu span{display:block;font:600 10.5px/1.3 Hanken,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
+.f16 .trofeu strong{display:block;font:700 15px/1.3 Cinzel,serif;letter-spacing:.05em}
+.cred{font-size:12px;color:#77716a;text-align:center;margin-bottom:56px}
+.murais{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1180px;margin:0 auto}
+.murais figure{padding:9px;background:#1b1916;box-shadow:inset 0 0 0 1px #34302b;position:relative}
+.murais figure::before{content:"";position:absolute;inset:4px;border:1px solid rgba(236,231,222,.16);pointer-events:none}
+.murais img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.murais figcaption{text-align:center;padding:14px 4px 6px}
+.murais figcaption b{display:block;font:700 15.5px/1.25 Cinzel,serif;letter-spacing:.04em}
+.murais figcaption span{font-size:13px;color:var(--mut)}
+.expo{max-width:640px;margin:44px auto 0;text-align:center;color:var(--mut);font-size:15.5px;text-wrap:balance}
+.expo b{color:var(--ink);font-weight:600}
+
+/* WORLD */
+.mundo{background:var(--bg2)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;max-width:1120px;margin:0 auto}
+.duo .tx{text-align:center}
+.duo .tx h2{margin-bottom:22px}
+.duo .tx p{color:var(--mut);margin:0 auto 16px;max-width:470px}
+.moldura{padding:12px;background:#efebe3;position:relative;box-shadow:0 30px 60px -20px rgba(0,0,0,.9)}
+.moldura::before{content:"";position:absolute;inset:5px;border:1.5px solid #141210;pointer-events:none}
+.moldura img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.cidades{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin:28px 0 22px;text-align:center}
+.cidades div{background:var(--bg2);padding:16px 10px}
+.cidades b{display:block;font:700 16px/1.2 Cinzel,serif;letter-spacing:.04em}
+.cidades span{font-size:13px;color:var(--mut);line-height:1.35;display:block;margin-top:4px}
+.tambem{font-size:14.5px;color:var(--mut)}
+
+/* ABOUT */
+.fatos{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin:28px 0}
+.fatos div{background:var(--bg);padding:20px 14px;text-align:center}
+.fatos b{display:block;font:700 19px/1.15 Cinzel,serif;letter-spacing:.04em;color:var(--ink);margin-bottom:6px}
+.fatos span{font-size:14px;color:var(--mut);line-height:1.4;display:block}
+.foto-cred{font-size:12px;color:#77716a;text-align:center;margin-top:12px}
+
+/* STUDIO */
+.estudio{background:var(--bg2)}
+.est{max-width:760px;margin:0 auto;text-align:center}
+.est address{font-style:normal;color:var(--mut);margin:0 0 26px;line-height:1.7}
+.est address b{color:var(--ink);font:700 20px/1.6 Cinzel,serif;letter-spacing:.06em}
+.map{display:block;width:100%;height:360px;border:0;filter:grayscale(1) invert(.9) contrast(.9);margin-top:52px;box-shadow:0 0 0 1px var(--line)}
+
+/* BOOK */
+.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);max-width:1100px;margin:0 auto 44px}
+.passos div{background:var(--bg);padding:32px 22px;text-align:center}
+.passos b{display:block;font:700 20px/1.1 Cinzel,serif;letter-spacing:.05em;margin-bottom:10px}
+.passos p{font-size:15px;color:var(--mut);line-height:1.5}
+.form{max-width:760px;margin:0 auto;display:grid;gap:22px;padding:clamp(22px,4vw,44px);border:1px solid var(--line);background:rgba(15,14,13,.86);position:relative}
+.form::before{content:"";position:absolute;inset:6px;border:1px solid rgba(236,231,222,.08);pointer-events:none}
+.campo{display:grid;gap:9px;border:0;min-width:0}
+.campo>span,.campo legend{font:700 14px/1 Cinzel,serif;letter-spacing:.08em;color:var(--ink);padding:0;margin:0 0 9px}
+.campo>span{margin:0}
+.form input:not([type=radio]),.form select,.form textarea{width:100%;font:400 17px/1.4 Hanken,sans-serif;color:var(--ink);background:transparent;border:0;border-bottom:1.5px solid #3d3732;padding:10px 0;outline:0;transition:border-color .3s var(--e)}
+.form select{appearance:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23ece7de' stroke-width='1.6'/%3E%3C/svg%3E") right 4px center no-repeat;padding-right:26px}
+.form select option{background:var(--bg)}
+.form textarea{border:1.5px solid #3d3732;padding:12px;resize:vertical;min-height:110px}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--red2)}
+.form ::placeholder{color:#6f6a62}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;border:1px solid #3d3732;padding:11px 15px;font:600 12.5px/1 Hanken,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);transition:all .3s var(--e)}
+.chips input:checked+span{border-color:var(--red);background:var(--red);color:var(--ink)}
+.chips input:focus-visible+span{outline:2px solid var(--ink);outline-offset:3px}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.erro{color:#e9a48f;font-size:14px;text-align:center}
+.form .btn{width:100%}
+.form small{display:block;text-align:center;color:var(--mut);font-size:13.5px;line-height:1.5}
+
+footer{border-top:1px solid var(--line);padding:46px 24px;text-align:center;color:var(--mut);font-size:14px}
+footer .logo{display:inline-block;margin-bottom:16px;color:var(--ink)}
+footer p+p{margin-top:6px}
+
+.lb{position:fixed;inset:0;background:rgba(8,7,6,.95);z-index:20;display:flex;align-items:center;justify-content:center;padding:24px}
+.lb img{max-height:84svh;max-width:min(92vw,820px);object-fit:contain;border:9px solid #efebe3;box-shadow:inset 0 0 0 1px #000}
+.lb button{position:absolute;background:rgba(15,14,13,.6);border:1px solid var(--line);color:var(--ink);width:52px;height:52px;font-size:22px;cursor:pointer;transition:background .3s var(--e)}
+.lb button:hover{background:var(--line)}
+.lb .x{top:18px;right:18px}.lb .pv{left:18px;top:50%}.lb .nx{right:18px;top:50%}
+.lb .quero{bottom:22px;left:50%;transform:translateX(-50%);width:auto;height:auto;min-height:50px;font-size:13px;padding:0 24px;background:var(--red);border-color:var(--red)}
+.lb .quero:hover{background:var(--red2)}
+
+/* ornaments: his own marks (the eye drawing from his profile, the CPK spray tag), static and faint */
+section{position:relative;overflow:hidden}
+section>.wrap,section>.duo,section>.est{position:relative;z-index:1}
+.orn{position:absolute;z-index:0;pointer-events:none;user-select:none;-webkit-user-drag:none;height:auto;opacity:var(--o,.1)}
+.orn-olho{top:110px;width:clamp(300px,30vw,520px);--o:.13;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 40%,transparent 72%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 40%,transparent 72%)}
+.orn-olho.l{left:-6%;transform:scaleX(-1)}.orn-olho.r{right:-6%}
+.orn-h{top:44%;width:clamp(300px,27vw,500px);--o:.09;z-index:-1;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 35%,transparent 72%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 35%,transparent 72%)}
+.orn-h.l{left:-7%;transform:translateY(-50%) scaleX(-1)}.orn-h.r{right:-7%;transform:translateY(-50%)}
+.orn-tag{left:50%;top:60px;width:clamp(150px,13vw,220px);transform:translateX(-50%);--o:.07;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent 95%);mask-image:linear-gradient(180deg,#000 55%,transparent 95%)}
+.orn-tag.lado-l{left:clamp(10px,6vw,110px);top:auto;bottom:80px;transform:none}
+.orn-tag.lado-r{left:auto;right:clamp(10px,6vw,110px);top:auto;bottom:80px;transform:none}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s var(--e),transform .7s var(--e)}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:1180px){.lado{display:none}}
+@media(max-width:1000px){
+ .grid{grid-template-columns:repeat(3,1fr);gap:14px}
+ .trof{grid-template-columns:1fr 1fr}
+ .murais{grid-template-columns:1fr 1fr}
+ .passos{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+ nav{padding:18px 20px;justify-content:center}
+ nav ul{display:none}
+ .hero{padding:80px 0 44px;min-height:auto}
+ .parede{background-image:url(img/parede-m.webp);background-position:center 38%}
+ .cena{flex:none;min-height:0;height:min(58svh,520px)}
+ .q0{--h:min(37svh,360px);--y:44%}
+ .q1{--x:max(19%,74px);--y:25%;--h:min(18svh,155px);--r:-6deg}
+ .q2{--x:min(81%,calc(100% - 74px));--y:25%;--h:min(18svh,155px);--r:6deg}
+ .q3{--x:max(19%,74px);--y:67%;--h:min(16svh,140px);--r:6deg}
+ .q4{--x:min(81%,calc(100% - 74px));--y:67%;--h:min(16svh,140px);--r:-6deg}
+ .placa{top:calc(100% + 10px);padding:7px 14px 6px}
+ .placa b{font-size:13px}.placa span{font-size:9px;letter-spacing:.12em}
+ .hero-txt{margin-top:22px}
+ .nome{font-size:clamp(2.5rem,12.4vw,4.6rem)}
+ .sub{font-size:10px;letter-spacing:.12em;margin:14px 0 22px;row-gap:8px}.sub span{padding:0 9px}
+ .sub span:last-child{flex-basis:100%;border-left:0}
+ .hero .btns{padding:0 16px}
+ .btn{padding:0 12px;font-size:12.5px;letter-spacing:.08em}
+ section{padding:80px 16px}
+ .grid{grid-template-columns:1fr 1fr;gap:10px}
+ .grid a{padding:6px}.grid a::before{inset:3px}
+ .duo{grid-template-columns:1fr;gap:38px}
+ .duo .ph{max-width:440px;margin:0 auto;width:100%}
+ .mundo .duo .ph{order:2}
+ .f16 figcaption{grid-template-columns:1fr;text-align:center;padding:18px 16px}
+ .murais{gap:10px}.murais figure{padding:6px}.murais figcaption b{font-size:13.5px}.murais figcaption span{font-size:12px}
+ .map{height:280px}
+ .duas{grid-template-columns:1fr;gap:22px}
+ .chips span{padding:10px 12px;font-size:11.5px}
+ .orn{--o:.06!important}
+ .orn-h{width:62vw}.orn-h.l{left:-30%}.orn-h.r{right:-30%}
+ .orn-olho{width:70vw}.orn-olho.l{left:-34%}.orn-olho.r{right:-34%}
+ .orn-tag.lado-l,.orn-tag.lado-r{width:110px;bottom:40px}
+}
+@media(max-width:560px){
+ .trof article{padding:22px 8px 20px}
+ .trof h3{font-size:17px}.trof .ev{font-size:12px;margin-bottom:12px}
+ .trof li{font-size:12.5px}.trof ul{gap:6px}
+ .passos div{padding:24px 14px}.passos b{font-size:17px}.passos p{font-size:14px}
+}
+@media(max-width:430px){.hero .btns{grid-template-columns:1fr}}
+@media(max-width:380px){
+ .btns{grid-template-columns:1fr}
+ .filt button{padding:11px 11px;font-size:11.5px}
+ .cidades b{font-size:14.5px}
+}
+@media (orientation:landscape) and (max-height:520px){
+ .hero{min-height:auto}
+ .cena{height:120svh}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav>
+ <a class="logo" href="#">Nark Pinhão<small>Portrait Tattoo</small></a>
+ <ul><li><a href="#work">Work</a></li><li><a href="#awards">Awards</a></li><li><a href="#beyond">Beyond skin</a></li><li><a href="#about">About</a></li><li><a href="#book">Book</a></li></ul>
+</nav>
+
+<header class="hero" id="top">
+ <div class="parede" aria-hidden="true"></div>
+ <img class="orn orn-h l" src="img/orn/olho.webp" alt="" aria-hidden="true" draggable="false">
+ <img class="orn orn-h r" src="img/orn/olho.webp" alt="" aria-hidden="true" draggable="false">
+ <h1 class="sr">Nark Pinhão, black and grey portrait tattoo artist at Versus Tattoo, Mafra, Portugal</h1>
+ <div class="cena" id="cena" role="img" aria-label="Nark Pinhão's tattoos pinned as cards on his graffiti wall; a burst of spray paint reveals the next piece">
+  <figure class="q q1"><div class="cart"><div class="ob"></div></div></figure>
+  <figure class="q q2"><div class="cart"><div class="ob"></div></div></figure>
+  <figure class="q q3"><div class="cart"><div class="ob"></div></div></figure>
+  <figure class="q q4"><div class="cart"><div class="ob"></div></div></figure>
+  <figure class="q q0"><div class="cart"><div class="ob"></div></div><figcaption class="placa" id="placa"><b>Malcolm X</b><span>Houston, Texas</span></figcaption></figure>
+ </div>
+ <aside class="lado le"><p><b>20+ awards</b>Europe and the USA</p><p><b>13 years</b>tattooing</p><p><b>Portraits</b>human and goddess</p></aside>
+ <aside class="lado ld"><p><b>Versus Tattoo</b>Mafra, Portugal</p><p><b>Guest spots</b>Houston, New York, L.A.</p><p><b>Original art</b>drawn for your skin</p></aside>
+ <div class="hero-txt">
+  <p class="nome" aria-hidden="true">Nark Pinhão</p>
+  <p class="sub"><span>Black &amp; grey portraits</span><span>Mafra · Portugal</span><span>From Portugal to the world</span></p>
+  <div class="btns"><a class="btn p" href="#book">Book a session</a><a class="btn s" href="#work">See the work</a></div>
+ </div>
+</header>
+
+<section id="work">
+ <img class="orn orn-olho l" src="img/orn/olho.webp" alt="" aria-hidden="true" draggable="false">
+ <img class="orn orn-olho r" src="img/orn/olho.webp" alt="" aria-hidden="true" draggable="false">
+ <div class="wrap">
+  <h2 class="rv">Faces, goddesses and legends</h2>
+  <p class="lead rv">Human portraits, goddesses and original art in black and grey. You bring the idea, Nark turns it into a piece made for you.</p>
+  <div class="filt" id="filt">
+   <button class="on" data-f="*">All</button><button data-f="pt">Portraits</button><button data-f="gd">Goddesses</button><button data-f="sl">Sleeves &amp; backs</button><button data-f="an">Animals &amp; skulls</button>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="more"><button class="btn s" id="mais">See more</button></div>
+ </div>
+</section>
+
+<section class="premios" id="awards">
+ <img class="orn orn-tag" src="img/orn/cpk.webp" alt="" aria-hidden="true" draggable="false">
+ <div class="wrap">
+  <h2 class="rv">20+ awards, from Agen to Houston</h2>
+  <p class="lead rv">Black and grey realism judged next to the best in the world. Some of these pieces were done live at the show, others were shown fully healed.</p>
+  <div class="trof rv">
+   <article><p class="ano">2025</p><h3>Houston</h3><p class="ev">Houston Tattoo Arts Festival, Texas</p><ul><li><b>1st</b> <span>XL black &amp; grey, healed</span></li><li><b>3rd</b> <span>Best leg sleeve, healed</span></li><li><b>3rd</b> <span>Best of Sunday</span></li></ul></article>
+   <article><p class="ano">2024</p><h3>New York</h3><p class="ev">Hudson Valley Tattoo Convention</p><ul><li><b>1st</b> <span>Black &amp; grey</span></li><li><b>1st</b> <span>Portrait / realism</span></li><li><b>1st</b> <span>Best sleeve</span></li></ul></article>
+   <article><p class="ano">2024</p><h3>Atlanta</h3><p class="ev">Villain Arts, Georgia</p><ul><li><b>1st</b> <span>Black &amp; grey realism</span></li><li><b>2nd</b> <span>Best of show</span></li><li><b>2nd</b> <span>Best leg sleeve</span></li><li><b>2nd</b> <span>Best of Sunday</span></li><li><b>3rd</b> <span>XL black &amp; grey female</span></li></ul></article>
+   <article><p class="ano">2024</p><h3>Cleveland</h3><p class="ev">Villain Arts, Ohio</p><ul><li><b>1st</b> <span>Best portrait</span></li><li><b>1st</b> <span>Black &amp; grey realism</span></li><li><b>1st</b> <span>Best of day, Sunday</span></li><li><b>2nd</b> <span>Best of show</span></li><li><b>3rd</b> <span>XL black &amp; grey, healed</span></li></ul></article>
+   <article><p class="ano">2024</p><h3>Ericeira</h3><p class="ev">Prémios Azul, Azul Ericeira Mag</p><ul><li><b>Winner</b> <span>Visual Arts Personality</span></li></ul></article>
+   <article><p class="ano">2023</p><h3>Lisbon</h3><p class="ev">Lisbon Tattoo Rock Fest</p><ul><li><b>Best of Day</b> <span>Sunday</span></li></ul></article>
+   <article><p class="ano">2023</p><h3>Fiuggi</h3><p class="ev">Fiuggi Tattoo Convention, Italy</p><ul><li><b>1st</b> <span>Black &amp; grey</span></li><li><b>2nd</b> <span>Best of Saturday</span></li></ul></article>
+   <article><p class="ano">2023</p><h3>Agen</h3><p class="ev">Agen Tattoo Convention, France</p><ul><li><b>1st</b> <span>Realism</span></li><li><span>His first international award</span></li></ul></article>
+  </div>
+ </div>
+</section>
+
+<section id="beyond">
+ <div class="wrap">
+  <h2 class="rv">Beyond skin</h2>
+  <p class="lead rv">Before the needle there was the spray can. Nark paints with the CPK crew and signs murals across Portugal.</p>
+  <figure class="f16 rv">
+   <img src="img/f16.webp" alt="F-16M of the Portuguese Air Force's 301 Squadron Jaguares in tiger livery painted by Nark, in flight">
+   <figcaption>
+    <div><b>The Jaguar that took to the sky</b><p>The F-16M of the Portuguese Air Force's 301 Squadron “Jaguares”, painted by Nark for the NATO Tiger Meet 2025.</p></div>
+    <div class="trofeu"><span>NATO Tiger Meet 2025</span><strong>Best Tiger Aircraft</strong></div>
+   </figcaption>
+  </figure>
+  <p class="cred">Photo: Sargento-Ajudante João Brito, Força Aérea Portuguesa</p>
+  <div class="murais">
+   <figure class="rv"><img src="img/m/anjo.webp" alt="Guardian angel mural by Nark in Mafra"><figcaption><b>Guardian angel</b><span>Mafra · done in 5 days</span></figcaption></figure>
+   <figure class="rv"><img src="img/m/fonte.webp" alt="Mural by Nark at Fonte do Rego, Ericeira"><figcaption><b>Fonte do Rego</b><span>Ericeira · 2025</span></figcaption></figure>
+   <figure class="rv"><img src="img/m/ods.webp" alt="Detail of Nark's mural on the sustainable development goals in Amadora"><figcaption><b>Sustainable goals</b><span>Amadora · 2024</span></figcaption></figure>
+   <figure class="rv"><img src="img/m/pray.webp" alt="You Better Pray, graffiti piece by Nark"><figcaption><b>You Better Pray</b><span>NARK lettering · 2023</span></figcaption></figure>
+  </div>
+  <p class="expo rv">Solo exhibition <b>“O outro lado”</b>, Casa da Cultura Jaime Lobo e Silva, Ericeira, 2023.</p>
+ </div>
+</section>
+
+<section class="mundo" id="world">
+ <div class="duo">
+  <div class="tx rv">
+   <h2>From Portugal to the world</h2>
+   <p>Every year Nark takes his black and grey portraits on the road, as a guest artist and at conventions in the USA and Europe.</p>
+   <div class="cidades">
+    <div><b>Houston</b><span>Titans Legacy Ink</span></div>
+    <div><b>New York</b><span>Infero NYC</span></div>
+    <div><b>Los Angeles</b><span>Ganga Tattoo</span></div>
+    <div><b>Venice, CA</b><span>Black Diamond Tattoo</span></div>
+   </div>
+   <p class="tambem">Also at shows in Pasadena, Cleveland, Atlanta, Lyon, Fiuggi, Agen, Brussels, Tunisia and Morocco.</p>
+  </div>
+  <div class="ph rv"><div class="moldura"><img src="img/m/show.webp" alt="Nark tattooing a backpiece at the Golden State Tattoo Expo"></div></div>
+ </div>
+</section>
+
+<section id="about">
+ <img class="orn orn-tag lado-l" src="img/orn/cpk.webp" alt="" aria-hidden="true" draggable="false">
+ <img class="orn orn-tag lado-r" src="img/orn/cpk.webp" alt="" aria-hidden="true" draggable="false">
+ <div class="duo">
+  <div class="ph rv"><div class="moldura"><img src="img/nark.webp" alt="Nark Pinhão"></div><p class="foto-cred">Photo: Bruno Pinto Photography</p></div>
+  <div class="tx rv">
+   <h2>Nark Pinhão</h2>
+   <p>Thirteen years of tattooing, with black and grey portraits as his signature: faces of people you love, icons, goddesses and original artwork.</p>
+   <p>He runs Versus Tattoo in Mafra and still paints walls with his crew. The best part of the job, in his words, is interpreting what a client imagines and turning it into personalized art.</p>
+   <div class="fatos"><div><b>13 years</b><span>tattooing</span></div><div><b>20+ awards</b><span>Europe and the USA</span></div><div><b>Versus Tattoo</b><span>his studio in Mafra</span></div><div><b>CPK</b><span>graffiti crew</span></div></div>
+   <a class="btn s" href="https://www.instagram.com/nark.cpk/" target="_blank" rel="noopener">@nark.cpk</a>
+  </div>
+ </div>
+</section>
+
+<section class="estudio" id="studio">
+ <div class="est">
+  <h2 class="rv">Versus Tattoo, Mafra</h2>
+  <p class="lead rv">Nark's home studio, in the centre of Mafra, a short drive from Lisbon and Ericeira.</p>
+  <address class="rv"><b>Versus Tattoo</b><br>Terreiro D. João V, 61, 1st floor<br>2640-492 Mafra, Portugal<br>Studio phone: <a href="tel:+351261854239">+351 261 854 239</a></address>
+  <div class="rv"><a class="btn s" href="https://www.google.com/maps/search/?api=1&amp;query=Terreiro+D.+Jo%C3%A3o+V+61+Mafra" target="_blank" rel="noopener">Open in maps</a></div>
+ </div>
+ <div class="wrap"><iframe class="map" title="Map to Versus Tattoo, Mafra" src="https://maps.google.com/maps?q=Terreiro%20D.%20Jo%C3%A3o%20V%2061%2C%202640-492%20Mafra&amp;z=16&amp;output=embed"></iframe></div>
+</section>
+
+<section id="book">
+ <img class="orn orn-olho l" src="img/orn/olho.webp" alt="" aria-hidden="true" draggable="false">
+ <img class="orn orn-olho r" src="img/orn/olho.webp" alt="" aria-hidden="true" draggable="false">
+ <div class="wrap">
+  <h2 class="rv">Book your piece</h2>
+  <p class="lead rv">Appointments are made by direct message. Fill this in and your request is ready to send to Nark on Instagram.</p>
+  <div class="passos rv">
+   <div><b>Idea</b><p>Tell him what you want, where on the body and the size.</p></div>
+   <div><b>References</b><p>Send the photos or the portrait you want on your skin.</p></div>
+   <div><b>Quote</b><p>Nark answers with the price and the number of sessions.</p></div>
+   <div><b>Your date</b><p>In Mafra or at one of his guest spots.</p></div>
+  </div>
+  <form class="form rv" id="form" novalidate>
+   <label class="campo"><span>Your name</span><input name="nome" autocomplete="given-name" required></label>
+   <fieldset class="campo"><legend>What do you want to tattoo</legend>
+    <div class="chips">
+     <label><input type="radio" name="tema" value="Portrait of someone I love" checked><span>Portrait</span></label>
+     <label><input type="radio" name="tema" value="Goddess / woman"><span>Goddess</span></label>
+     <label><input type="radio" name="tema" value="Sleeve or backpiece"><span>Sleeve or back</span></label>
+     <label><input type="radio" name="tema" value="Animal or skull"><span>Animal or skull</span></label>
+     <label><input type="radio" name="tema" value="Not sure yet"><span>Not sure yet</span></label>
+    </div>
+   </fieldset>
+   <fieldset class="campo"><legend>Where</legend>
+    <div class="chips">
+     <label><input type="radio" name="onde" value="Versus Tattoo, Mafra" checked><span>Mafra, Portugal</span></label>
+     <label><input type="radio" name="onde" value="Guest spot / convention"><span>Guest spot or show</span></label>
+    </div>
+   </fieldset>
+   <div class="duas">
+    <label class="campo"><span>Body placement</span><input name="local" placeholder="e.g. right forearm"></label>
+    <label class="campo"><span>Size</span>
+     <select name="tamanho"><option>Up to 10 cm</option><option selected>Medium (10 to 20 cm)</option><option>Large (over 20 cm)</option><option>Sleeve or backpiece</option></select></label>
+   </div>
+   <label class="campo"><span>Tell him your idea</span><textarea name="ideia" id="ideia" rows="4" placeholder="Who or what, the meaning, if you have the photo for the portrait..."></textarea></label>
+   <label class="campo"><span>Availability</span>
+    <select name="quando"><option>Flexible</option><option>Weekdays</option><option>Weekends</option></select></label>
+   <p class="erro" id="erro" hidden>Write your name to continue.</p>
+   <button class="btn p" type="submit">Send on Instagram</button>
+   <small id="cop">Your message is copied and Nark's Instagram opens. Just paste it and attach your references.</small>
+  </form>
+ </div>
+</section>
+
+<footer>
+ <span class="logo">Nark Pinhão<small>Portrait Tattoo</small></span>
+ <p>Versus Tattoo · Terreiro D. João V, 61, 1st floor, Mafra, Portugal</p>
+ <p>Site by <a href="https://lrgz.com.br">L R G Z</a></p>
+</footer>
+
+<div class="lb" id="lb" hidden><button class="x" aria-label="Close">×</button><button class="pv" aria-label="Previous">‹</button><img id="lbi" alt=""><button class="nx" aria-label="Next">›</button></div>
+
+<script>
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+// HERO: each card gets the next piece painted over it with two bursts of spray
+(function(){
+ const SEQ=[['49','222','352','266','126'],['105','161','342','104'],['256','68','162','159'],['103','76','263','165'],['56','81','96','68']];
+ const NOME={'49':['Malcolm X','Houston, Texas'],'222':['Jack Nicholson','Versus Tattoo, Mafra'],'352':['The Godfather','Lyon, France'],'266':['Diana','Goddess of the hunt'],'126':['Hale','Original artwork']};
+ const ORD=[4,0,1,2,3]; // figures in HTML: q1,q2,q3,q4,q0
+ const src=f=>`img/q/${f}.webp`;
+ const figs=[...document.querySelectorAll('.cena .q')];
+ const qs=SEQ.map((s,i)=>{const ob=figs[ORD[i]].querySelector('.ob');const im=new Image();im.src=src(s[0]);im.alt='';ob.appendChild(im);return{ob,k:0}});
+ SEQ.flat().forEach(f=>{const i=new Image();i.src=src(f)});
+ ['a','b'].forEach(n=>{const i=new Image();i.src=`img/spray-${n}.png`});
+ const placa=document.getElementById('placa');
+ function troca(i){const q=qs[i];q.k=(q.k+1)%SEQ[i].length;const id=SEQ[i][q.k];
+  const mx=(32+Math.random()*36)+'%',my=(28+Math.random()*30)+'%';
+  const mk=cls=>{const e=new Image();e.src=src(id);e.alt='';e.className=cls;e.style.setProperty('--mx',mx);e.style.setProperty('--my',my);q.ob.appendChild(e);return e};
+  mk('sp sa');const b=mk('sp sb');
+  if(i===0){placa.classList.add('tr');setTimeout(()=>{placa.querySelector('b').textContent=NOME[id][0];placa.querySelector('span').textContent=NOME[id][1];placa.classList.remove('tr')},900)}
+  b.addEventListener('animationend',()=>{[...q.ob.children].forEach(x=>{if(x!==b)x.remove()});b.className='';b.removeAttribute('style')},{once:true})}
+ let t=null,ini=false;const onda=()=>{[0,1,2,3,4].forEach((i,n)=>setTimeout(()=>troca(i),n*320))};
+ function liga(){if(ini&&!t&&!RM)t=setInterval(onda,5600)}function desliga(){clearInterval(t);t=null}
+ if(!RM)setTimeout(()=>{ini=true;onda();liga()},2000);
+ new IntersectionObserver(e=>e[0].isIntersecting?liga():desliga()).observe(document.getElementById('cena'));
+ document.addEventListener('visibilitychange',()=>document.hidden?desliga():liga());
+})();
+
+const T='pt gd sl an pt gd sl an pt gd sl an pt gd sl an pt gd sl an pt gd an pt gd an pt gd an pt gd an pt gd an pt an'.split(' ');
+const NM={0:'Malcolm X portrait',3:'Lion',17:'Hale, original artwork',19:'Lion',20:'Jack Nicholson portrait',21:'Diana, goddess of the hunt',26:'The Godfather portrait',31:'Baco, original artwork'};
+const g=document.getElementById('grid');let f='*',lim=24,vis=[];
+const src=i=>`img/g/${String(i).padStart(2,'0')}.webp`;
+function draw(){vis=T.map((t,i)=>({t,i})).filter(o=>f=='*'||o.t==f);g.innerHTML=vis.slice(0,lim).map((o,k)=>`<a href="${src(o.i)}" data-k="${k}"><div class="fr"><img src="${src(o.i)}" alt="${NM[o.i]?NM[o.i]+', ':''}black and grey tattoo by Nark Pinhão"></div></a>`).join('');document.getElementById('mais').parentNode.hidden=vis.length<=lim}
+draw();
+document.getElementById('filt').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#filt button').forEach(x=>x.classList.toggle('on',x==b));f=b.dataset.f;lim=24;draw()};
+document.getElementById('mais').onclick=()=>{lim=99;draw()};
+const lb=document.getElementById('lb'),lbi=document.getElementById('lbi');let li=0;
+const show=k=>{li=(k+vis.length)%vis.length;lbi.src=src(vis[li].i);lbi.alt=g.querySelectorAll('img')[li]?.alt||'';lb.hidden=false};
+g.onclick=e=>{const a=e.target.closest('a');if(!a)return;e.preventDefault();show(+a.dataset.k)};
+lb.onclick=e=>{if(e.target.classList.contains('pv'))show(li-1);else if(e.target.classList.contains('nx'))show(li+1);else if(e.target!==lbi&&!e.target.classList.contains('quero'))lb.hidden=true};
+addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key=='Escape')lb.hidden=true;if(e.key=='ArrowLeft')show(li-1);if(e.key=='ArrowRight')show(li+1)});
+const q=document.createElement('button');q.className='btn quero';q.textContent='I want one like this';lb.appendChild(q);
+q.addEventListener('click',e=>{e.stopPropagation();lb.hidden=true;const id=document.getElementById('ideia');id.value='I saw a piece like this on your site (photo '+(vis[li].i+1)+' of the portfolio) and I want something similar. ';document.getElementById('book').scrollIntoView();setTimeout(()=>id.focus({preventScroll:true}),600)});
+
+const form=document.getElementById('form'),erro=document.getElementById('erro');
+form.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(form),nome=(d.get('nome')||'').trim();
+ if(!nome){erro.hidden=false;form.nome.focus();return}erro.hidden=true;
+ const l=['Hi Nark! I\'m '+nome+' and I\'d like a quote.','','Idea: '+d.get('tema'),'Where: '+d.get('onde'),'Body placement: '+((d.get('local')||'').trim()||'to be decided'),'Size: '+d.get('tamanho'),'Availability: '+d.get('quando')];
+ const ideia=(d.get('ideia')||'').trim();if(ideia)l.push('','Details: '+ideia);l.push('','(sent from your website)');
+ const t=l.join('\n');
+ try{navigator.clipboard.writeText(t)}catch(_){}
+ document.getElementById('cop').textContent='Message copied. On Instagram, just paste it and send.';
+ window.open('https://ig.me/m/nark.cpk','_blank','noopener')});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
